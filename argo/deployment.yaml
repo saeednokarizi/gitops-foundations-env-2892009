@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: gitops-foundations
-        image: docker.io/saeednokarizi/gitops-foundations:3.1
+        image: docker/saeednokarizi/gitops-foundations:3.2
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
