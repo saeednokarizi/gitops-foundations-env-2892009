@@ -18,7 +18,7 @@ spec:
       containers:
       - name: gitops-foundations
         image: saeednokarizi/gitops-foundations:2.0
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
         livenessProbe:
@@ -28,5 +28,3 @@ spec:
           initialDelaySeconds: 5
           periodSeconds: 10
           failureThreshold: 2
-      imagePullSecrets:
-      - name: my-registry-secret
